@@ -13,7 +13,6 @@ public class Application2 {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } {
-
+        }
     }
 }
