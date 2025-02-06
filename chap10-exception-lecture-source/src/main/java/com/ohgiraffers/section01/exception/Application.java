@@ -12,6 +12,10 @@ public class Application {
         } catch(ArithmeticException e) {
             System.out.println("예외가 발생했군요!");
 
+            System.out.println(
+            );
+            System.out.println();
+
             System.out.println("그 예외는 " + e.getMessage() + "때문이군요!!!!");
             System.out.println("거 돈 좀 넉넉히 들고 다닙시다.");
 //            System.exit(0);                     // 자바 어플리케이션이 즉시 종료되도록 처리
