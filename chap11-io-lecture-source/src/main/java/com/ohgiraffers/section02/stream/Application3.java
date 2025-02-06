@@ -10,10 +10,13 @@ public class Application3 {
         /* 수업목표. FileReader를 이해하고 활용할 수 있다. */
         FileReader fr = null;
         try {
-            fr = new FileReader("src/main/java/com/ohgiraffers/section02/stream/testReader.txt");
+            fr = new FileReader(
+                    "src/main/java/com/ohgiraffers/section02/stream/testReader.txt");
+//            int readChar = fr.read();
+//            System.out.println((char) readChar);
 
             int readChar = 0;
-            while((readChar = fr.read()) != -1) {
+            while((readChar = fr.read()) != -1 ) {
                 System.out.println((char) readChar);
             }
 
