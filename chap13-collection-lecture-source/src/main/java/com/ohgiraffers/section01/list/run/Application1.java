@@ -1,8 +1,6 @@
 package com.ohgiraffers.section01.list.run;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Application1 {
     public static void main(String[] args) {
@@ -63,6 +61,36 @@ public class Application1 {
         newIntArr[0] = intArr[0];
         newIntArr[index] = 7;
         System.out.println(Arrays.toString(newIntArr));
+
+        /* 설명. ArrayList를 활용한 정렬 */
+        /* 목차. 1. 문자열 데이터 정렬(feat.오름차순) */
+
+        /* 설명. 은닉화(hiding)
+        *   - 타입 은닉(다형성)
+        *   - 구현 은닉(인터페이스 활용)
+        *   - 필드 및 메소드 은닉(캡슐화(feat.private))
+        *  */
+
+//        List<String> stringList = new ArrayList<>();
+        List<String> stringList = new LinkedList<>();       // 내림차순 할 때는 LinkedList로 변경
+        stringList.add("apple");
+        stringList.add("orange");
+        stringList.add("banana");
+        stringList.add("mango");
+        stringList.add("grape");
+
+        System.out.println("문자열 데이터 : " + stringList);
+
+        /* 설명. 실제로는 ArrayList 안에 있는 데이터인 String에 정의된 기준(오름차순)대로 정렬 됨 */
+        Collections.sort(stringList);
+        System.out.println("정렬된 문자열 데이터 : " + stringList);
+
+        /* 목차. 1-1. 문자열 데이터 내림차순 정렬 */
+        /* 설명. 다루는 Iterator와 해당 컬렉션의 제네릭 타입은 왠만하면 꼭 명시하자.(feat.다운캐스팅 방지(타입 안정성)) */
+        Iterator<String> iter = ((LinkedList) stringList).descendingIterator();
+        while(iter.hasNext()){
+            System.out.println(iter.next());
+        }
 
 
     }
