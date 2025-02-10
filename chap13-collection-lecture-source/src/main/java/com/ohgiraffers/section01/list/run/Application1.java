@@ -91,19 +91,5 @@ public class Application1 {
         while(iter.hasNext()){
             System.out.println(iter.next());
         }
-
-
     }
-
-//    public static int[] arrayAdd(int index, int number, int[] array){
-//        int[] newArray = new int[array.length + 1];
-//        for(int i=0; i<index; i++){
-//            newArray[i] = array[i];
-//        }
-//        newArray[index] = number;
-//        for(int i=index+1; i<newArray.length; i++){
-//            newArray[i] = array[i-1];
-//        }
-//        return newArray;
-//    }
 }
