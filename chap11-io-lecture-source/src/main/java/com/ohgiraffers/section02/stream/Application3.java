@@ -19,7 +19,6 @@ public class Application3 {
             while((readChar = fr.read()) != -1 ) {
                 System.out.println((char) readChar);
             }
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
