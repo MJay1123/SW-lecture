@@ -1,4 +1,4 @@
-package com.ohgiraffers.chap03.chap04.section01.greedy;
+package com.ohgiraffers.chap04.section01.greedy;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -44,3 +44,4 @@ public class Application1Test {
         Assertions.assertEquals(output, result);
     }
 }
+
